@@ -54,7 +54,7 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["download"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["download@chinjutgfilebot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
@@ -66,7 +66,7 @@ if __name__ == "__main__" :
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdl"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@chinjutgfilebot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
@@ -78,7 +78,7 @@ if __name__ == "__main__" :
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command(["cancel"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["cancel@chinjutgfilebot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
@@ -96,7 +96,7 @@ if __name__ == "__main__" :
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@chinjutgfilebot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
